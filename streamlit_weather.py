@@ -4,7 +4,7 @@ import requests
 
 API_KEY=st.secrets["openweathermap"]["api_key"]
 
-@st.cache_data(ttl=86400) #1 napig tárolja az adatokat
+@st.cache_data(ttl=3600) #1 óráig tárolja az adatokat
 def weather_city(city):
     print(f"Able to reach {city}'s weather.")
 
