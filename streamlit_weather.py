@@ -23,7 +23,7 @@ city = st.text_input("Enter City name: (e.g.: Washington, London)", value = "Bud
 data = weather_city(city)
 print(data)
 
-st.header(f'Current Weather in {city}')
+st.header(f'Current Weather in {city.title()}')
 
 def process_data(data):
 
