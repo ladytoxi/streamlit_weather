@@ -57,9 +57,10 @@ if data:
             st.metric(label="Humidity (%)", value=f"{df['humidity'].iloc[-1]:,.0f}%")
         with kpi3:
             st.metric(label="Wind speed (m/s)", value=f"{df['speed'][-30:].max():,.2f} m/s")
+        st.header(f'Weather map')
         st.map(df)
 else:
     st.error(f"No data available. Check City!")
 
-st.header(f'Weather map')
+
 
